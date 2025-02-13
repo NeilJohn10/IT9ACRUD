@@ -1,11 +1,11 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ordering_system";
+$host = "localhost";
+$username = "root";  // Default XAMPP username
+$password = "";      // Default XAMPP password (empty)
+$dbname = "ordering_system"; // ✅ Change to your actual database name
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Create MySQLi connection
+$conn = new mysqli($host, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
